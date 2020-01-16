@@ -16,7 +16,7 @@ CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
 
 COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
-print("[INFO] loading model...")
+print("INFO loading model...")
 net = cv2.dnn.readNetFromCaffe("MobileNetSSD_deploy.prototxt.txt", "MobileNetSSD_deploy.caffemodel")
 
 def detect(frame):
@@ -47,7 +47,7 @@ while True:
         break
 
 end = time.time()
-print("[INFO]  the program took {:.2f} seconds".format(end - start))
+print("INFO program took {:.2f} seconds".format(end - start))
 cap.release()
 cv2.destroyAllWindows()
     
