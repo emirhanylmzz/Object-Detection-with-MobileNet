@@ -2,7 +2,7 @@
 """
 Created on Thu Aug 15 01:41:57 2019
 
-@author: Acer
+@author: emirhanylmzz
 """
 
 import cv2
